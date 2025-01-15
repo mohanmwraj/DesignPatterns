@@ -275,7 +275,67 @@ Examples:
 * Monitoring Systems: Alerting administrators to system health changes.
 
 -------------------------------
-<B> Observer Design Pattern </B>
+<B> Command Design Pattern </B>
+
+Decoupling the sender of a request from its receiver and allowing for parameterization of requests.
+
+Key Components:
+
+* Command: Encapsulates a request as an object, including the action to be performed and its parameters.
+* Concrete Command: Implements the command interface, binding a specific action to a receiver.
+* Invoker: Initiates the command execution without knowing its details.
+* Receiver: Executes the action associated with the command.
+
+Advantages:
+
+* Decoupling: Separates sender and receiver, reducing dependencies.
+* Flexibility: Allows for dynamic command composition and execution.
+* Undo/Redo: supports undoing and redoing operatons by storing command history.
+* Queueing: enables queuing, logging and scheduling of commands.
+
+Disadvantages:
+
+* Complexity: May introduce additional classes and indirection.
+* Maintenance: Can lead to a large number of command classes for complext systems.
+
+Examples:
+
+* GUI Applications: Implementing undo/redo functionality and managing user actions.
+* Remote Control Systems: Handling button presses for various devices.
+* Queueing Systems: Building job queues for tasks with different parameters.
+* Transaction Management: Managing database transactions as commands.
+
+-------------------------------
+<B> Chain of Responsibility Design Pattern </B>
+
+Avoiding tight coupling between sender and receiver of a request and allowing multiple objects to handle a request.
+
+Key Components:
+
+* Handler: Defines an interface for handling requests and optionally passing them to the next handler.
+* Concrete Handler: Implements the handler interface, handles requests, and may pass them to the next handler.
+* Client: Initiates requests, unaware of the handler's hierarchy.
+
+Advantages:
+
+* Decoupling: Separates request senders from receivers, promoting loose coupling.
+* Dynamic Handling: Allows dynamic addition, removeal or reordering of handlers.
+* Responsibility Distribution: Divides responsibilities amoung multiple handlers.
+
+Disadvantages:
+
+* Unprocessed Requests: There's a risk that requests may go unhandled if there's no suitable handler in the chain.
+* Complexity: Managing the chain hierarchy can introduce complexity.
+
+Examples:
+
+* Approval Workflows: Handling approcal requests through multiple stages.
+* Exception Handling: Handling exceptions through a series of exception handlers.
+* Security Filters: Authorizing and authentication requests in a web application.
+
+-------------------------------
+<B> Iterator Design Pattern </B>
+
 
 
 
