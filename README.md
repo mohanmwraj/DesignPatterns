@@ -71,10 +71,57 @@ Dependency Inversion Principle (DIP):
 * Association (Bidirectional): A mutual relationship where both classes are aware of each other, enabling interaction in both directions.
 * Inheritance: A relationship where a subclass inherits attributes and behvaiors from a superclass, facilitating code reuse and hierarchy.
 * Implementation: When a class adheres to an interface or abstract class's contract, it must provide specific behaviors defined by that contract.
-
+------------------------------
 ![image](https://github.com/user-attachments/assets/42c46ee0-38d0-4335-989b-ba83ff332154)
 
+-------------------------------
+<B> Simple Factory Design Pattern </B>
 
+* Appropriate when you want to create objects without exposing their instantiation logic to clients.
+* Useful when you have multiple classes that share a common interface or base class and need to create instances of these classes based on certain conditions.
+* Has a central factory class with a static method for object creation.
+* The client ocde interacts with this factory class to obtain instances of objects without direct knowledge of their concrete types.
+* Key Components:
+    * Create (Factory) Class: Contains a static factory method for creating objects.
+    * Concrete Products: Classes that implement a common interface or extend a common base class.
+* Problem Solved:
+    * Centralized object creation logic, reducing code duplication.
+    * Encapsulates object creation details, making the system more maintainable and flexible.
+    * Provides a single entry point for creating objects.
+ 
+-------------------------------
+<B> Factory Method Design Pattern </B>
+
+ * Appropriate when you want to delegate the responsibility of object creation to subclassses.
+ * Useful when you have a family of related classes, and clients should work with these classes through a common interface.
+ * Has an abstract creator class or interface declaring a factory method.
+ * Subclasses of the creator class implement the factory method to create specific objects.
+ * Key Components:
+   * Creator (Factory) Class: Declares the factory method, which returns an object of a common interface or base class.
+   * Concrete Creators: Subclasses that implement the factory method to create specific products (objects).
+   * Products: Classes that implement a common interface or extend a common base class.
+* Problem Solved:
+   * Support extensibility by enabling the addition of new products (objects) without modifying existing code.
+   * Promotes loose coupling by allowing clients to work with the creator's interface, abstracting concrete class details.
+
+-------------------------------
+<B> Abstract Factory Design Pattern </B>
+
+* Appropriate when you need to create families of related or dependent objects without specifying their concrete classes.
+* Useful for building complex systems with multiple interrelated objects.
+* Has multiple abstract factory classes (one for each family of objects).
+* Concrete factory classes implement these abstract factories to create families of related objects.
+* Key Components:
+  * Abstract Factory: Declares factory methods for creating objects belonging to the family.
+  * Concrete Factory: Implements the abstract factory, creating a family of related objects.
+  * Products: Classes that implement a common interface or extend a common base class within a family.
+* Problem Solved:
+  * Addresses the challenge of creating complex systems with multiple interrelated objects.
+  * Ensures that objects created by a factory are consistent and compatible with each other.
+  * Promotes scalability by allowing the addition of new families of objects.
+
+-------------------------------
+<B> Builder Design Pattern </B>
 
 
 
