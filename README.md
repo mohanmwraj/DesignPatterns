@@ -131,7 +131,8 @@ Key Components:
   * Ensures that objects created by a factory are consistent and compatible with each other.
   * Promotes scalability by allowing the addition of new families of objects.
   * 
-![image](https://github.com/user-attachments/assets/11e3367a-9dea-4a6f-8f62-66e498d35ce7)
+![image](https://github.com/user-attachments/assets/d860fe09-cd5d-4126-be89-8c201a3478d8)
+
 
 -------------------------------
 ## Builder Design Pattern
