@@ -256,6 +256,8 @@ Exmaples:
 * Device Drivers: Ensuring one instance for hardware control.
 * Resource Managers: Controlling access to resources like file systems.
 
+![image](https://github.com/user-attachments/assets/3c7ad416-0edb-4c4f-8722-5b314041999f)
+
 -------------------------------
 ## Observer Design Pattern
 
