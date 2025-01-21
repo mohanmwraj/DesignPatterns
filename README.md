@@ -211,6 +211,9 @@ Example Use Cases:
 * Generating copies of documents or reports with different data.
 * Cloning configurations for software development.
 
+![image](https://github.com/user-attachments/assets/aa599135-202e-46fc-9712-dad8f9f6770a)
+
+
 -------------------------------
 ## Singleton Design Pattern
 
