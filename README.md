@@ -173,6 +173,9 @@ Example Use Cases:
 * Building complex documents (e.g., HTML, PDF) with various formatting options.
 * Constructing complex meals with various components (e.g., fast-food order).
 
+![image](https://github.com/user-attachments/assets/814f47ad-3db7-4aeb-89af-2abdf47d72dc)
+
+
 -------------------------------
 ## Prototype Design Pattern
 
