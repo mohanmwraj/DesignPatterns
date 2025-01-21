@@ -323,6 +323,8 @@ Examples:
 * Queueing Systems: Building job queues for tasks with different parameters.
 * Transaction Management: Managing database transactions as commands.
 
+![image](https://github.com/user-attachments/assets/1f500883-6c31-47d6-821a-9beef56f0393)
+
 -------------------------------
 ## Chain of Responsibility Design Pattern
 
