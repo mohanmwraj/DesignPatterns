@@ -290,6 +290,8 @@ Examples:
 * Traffic Management: Real-time traffic updates to GPS navigation systems.
 * Monitoring Systems: Alerting administrators to system health changes.
 
+![image](https://github.com/user-attachments/assets/eb8dd347-76e5-4c26-b356-e61d3bd30ec8)
+
 -------------------------------
 ## Command Design Pattern
 
